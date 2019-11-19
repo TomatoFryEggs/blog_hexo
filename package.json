@@ -1,0 +1,42 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "hexo": {
+    "version": "4.0.0"
+  },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "adapter": "hexo",
+    "login": "che1994",
+    "repo": "blog",
+    "onlyPublished": true,
+    "postPath": "source/_posts/yuque"
+  },
+  "dependencies": {
+    "hexo": "^4.0.0",
+    "hexo-admin": "^2.3.0",
+    "hexo-deployer-git": "^2.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-searchdb": "^1.0.8",
+    "hexo-generator-sitemap": "^1.2.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-migrator-wordpress": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0",
+    "hexo-wordcount": "^6.0.1"
+  },
+  "scripts": {
+    "clean": "hexo clean",
+    "sync": "yuque-hexo sync",
+    "clean:yuque": "yuque-hexo clean",
+    "g": "npm run sync && hexo g -d"
+  },
+  "devDependencies": {
+    "yuque-hexo": "^1.6.2"
+  }
+}

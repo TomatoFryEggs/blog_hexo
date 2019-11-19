@@ -1,0 +1,13 @@
+http://0.0.0.0:8080/
+Traceback (most recent call last):
+  File "yuque_syncserver.py", line 15, in <module>
+    app.run()
+  File "/home/Jobin/.local/lib/python2.7/site-packages/web/application.py", line 341, in run
+    return wsgi.runwsgi(self.wsgifunc(*middleware))
+  File "/home/Jobin/.local/lib/python2.7/site-packages/web/wsgi.py", line 59, in runwsgi
+    return httpserver.runsimple(func, server_addr)
+  File "/home/Jobin/.local/lib/python2.7/site-packages/web/httpserver.py", line 177, in runsimple
+    server.start()
+  File "/home/Jobin/.local/lib/python2.7/site-packages/web/wsgiserver/wsgiserver2.py", line 1943, in start
+    raise socket.error(msg)
+socket.error: No socket could be created -- (('0.0.0.0', 8080): [Errno 98] Address already in use)
