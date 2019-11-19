@@ -38,7 +38,7 @@ after_script:
 #只监测这个分支，一有动静就开始构建
 branches:
   only:
-  - hexo 
+  - master 
 env:
     global:
         - GH_REF: github.com/TomatoFryEggs/tomatofryeggs.github.io.git
