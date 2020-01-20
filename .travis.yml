@@ -16,6 +16,7 @@ install:
   - npm install   
   - npm install hexo-deployer-git --save
   - npm i -g yuque-hexo
+  - npm install --save shelljs
 script:
   - yuque-hexo clean
   - yuque-hexo sync
