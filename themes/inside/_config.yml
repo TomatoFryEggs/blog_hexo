@@ -384,20 +384,20 @@ pwa:
 # ```bash
 # npm install babel-core babel-preset-env html-minifier uglify-js --save
 # ```
- plugins:
+plugins:
   - //cdn1.lncld.net/static/js/3.0.4/av-min.js
-      - //unpkg.com/valine/dist/Valine.min.js
-      - position: comments
-        template: |
-          <div id="vcomment"></div>
-          <script>
-            new Valine({
-              el: '#vcomment',
-              appId: 'u7w2pwtng7a93hxy1ndpu7m6dcaaxq4fhfr14d801x69vj0v',
-              appKey: '5259okvwc6il5ybe5clbuhyj1ddoj1tzlfejf7xbd9f4c6p4',
-              path: location.pathname
-            })
-          </script>
+  - //unpkg.com/valine/dist/Valine.min.js
+  - position: comments
+    template: |
+      <div id="vcomment"></div>
+      <script>
+        new Valine({
+          el: '#vcomment',
+          appId: 'u7w2pwtng7a93hxy1ndpu7m6dcaaxq4fhfr14d801x69vj0v',
+          appKey: '5259okvwc6il5ybe5clbuhyj1ddoj1tzlfejf7xbd9f4c6p4',
+          path: location.pathname
+        })
+      </script>
 
 #   # Dynamic inject html snippet
 #   - position: # `sidebar` | `post` | `page` | `comments` | `avatar`, can be an array
